@@ -1,0 +1,88 @@
+.popup__form {
+  display: none;
+  padding: 30px;
+  max-width: 320px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 2, 5, 0.36); }
+
+.popup__form_title {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-family: "Open Sans Bold", arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase; }
+
+.popup__form_name,
+.popup__form_phone {
+  max-width: 100%;
+  width: 260px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #f3f3f3;
+  box-shadow: 0 2px 0 #b5c8dc;
+  background-repeat: no-repeat;
+  background-position: 10px 10px; }
+
+.popup__form_name {
+  background-image: url("../images/form_name.png"); }
+
+.popup__form_phone {
+  background-image: url("../images/form_phone.png"); }
+
+.popup__form_name input,
+.popup__form_phone input {
+  margin-top: 12px;
+  background-color: #f3f3f3;
+  outline: none;
+  font-size: 14px;
+  border: none;
+  font-family: 'OpenSansLight', sans-serif; }
+
+.popup__form_button {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+.popup__form_button a {
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: "Open Sans Bold", arial, sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #fac61d;
+  box-shadow: 0 3px 0 #c09300; }
+  .popup__form_button a:hover {
+    background-color: #c09300;
+    box-shadow: 0 3px 0 #fac61d; }
+
+.popup__form_phone_error {
+  font-size: 14px;
+  padding-top: 5px;
+  color: #ff6866; }
+
+/* ╨б╨┐╨░╤Б╨╕╨▒╨╛ ╨╖╨░ ╨╖╨░╤П╨▓╨║╤Г */
+.thanks {
+  max-width: 100%;
+  display: none;
+  width: 360px;
+  height: 292px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center; }
+  .thanks h2 {
+    color: #222;
+    font-size: 22px;
+    line-height: 36px;
+    text-transform: uppercase; }
+  .thanks img {
+    margin-top: 10px; }
+  .thanks a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dashed #fac61d; }
+  .thanks a:hover {
+    color: black; }
