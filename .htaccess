@@ -1,7 +1,9 @@
 RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.xn----8sbaki2cedvnj1a.xn--p1ai$ [NC]
+RewriteRule ^(.*)$ https://xn----8sbaki2cedvnj1a.xn--p1ai/$1 [R=301,L]
+
 RewriteCond %{HTTP:X-Forwarded-Protocol} !=https
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
-Redirect 301 https://www.xn----8sbaki2cedvnj1a.xn--p1ai/ https://xn----8sbaki2cedvnj1a.xn--p1ai/
 
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
@@ -19,3 +21,4 @@ ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
 ## EXPIRES CACHING ##
+
