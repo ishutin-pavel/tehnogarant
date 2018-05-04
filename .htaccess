@@ -1,5 +1,6 @@
 RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/robots.txt$
+RewriteCond %{REQUEST_URI} !^/price.yml$
 RewriteCond %{HTTP_HOST} ^www.xn----8sbaki2cedvnj1a.xn--p1ai$ [NC]
 RewriteRule ^(.*)$ https://xn----8sbaki2cedvnj1a.xn--p1ai/$1 [R=301,L]
 
