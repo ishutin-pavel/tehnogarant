@@ -1,1 +1,4 @@
-host: xn----8sbaki2cedvnj1a.xn--p1ai
+User-agent: *
+Host: https://xn----8sbaki2cedvnj1a.xn--p1ai/
+Disallow: /cgi-bin
+Sitemap: https://xn----8sbaki2cedvnj1a.xn--p1ai/sitemap.xml
