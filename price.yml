@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2018-05-04 20:51">
+      <shop>
+        <name>Техногарант</name>
+        <company>ООО "Техногарант"</company>
+        <url>https://xn----8sbaki2cedvnj1a.xn--p1ai/</url>
+
+        <currencies>
+            <currency id="RUR" rate="1" plus="0"/>
+        </currencies>
+
+        <categories>
+            <category id="01">Техосмотр</category>
+        </categories>
+
+        <offers>
+            <offer id="1000" type="vendor.model" available="true">
+                <url>https://xn----8sbaki2cedvnj1a.xn--p1ai/</url>
+                <price>480</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>01</categoryId>
+                <delivery>false</delivery>
+                <model>Техосмотр - Легковые ТС (М1)</model>
+                <vendor>Техногарант</vendor>
+                <description>Техосмотр легковых автомобилей (М1) в официальном пункте технического осмотра.</description>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>

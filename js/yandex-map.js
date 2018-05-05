@@ -52,11 +52,26 @@ function init() {
 		myMap.geoObjects
 				.add(myGeoObject)
 				.add(myGeoObject_1);
-		myMap.behaviors.disable('scrollZoom');/* отключаем увеличение при скроле */
 
-		var windowSize = $(window).width();
+				console.log("Отключили увеличение при скроле");
+				myMap.behaviors.disable('scrollZoom');
 
-		if (windowSize <= 479) {
-				myMap.behaviors.disable('drag');/* отключаем увеличение при листании пальцем */
-		}
+		function checkWidth() {
+			var windowSize = $(window).width();
+			if (windowSize <= 1199) {
+				myMap.behaviors.disable('drag');
+				console.log("Отключили перемещение карты при нажатой левой кнопке мыши либо одиночным касанием");
+
+				myMap.behaviors.enable('multiTouch');
+				console.log("Включили масштабирование карты двойным касанием (например, пальцами на сенсорном экране)");
+			}	else if (windowSize >= 1200) {
+					myMap.behaviors.enable('drag');
+					console.log("Включили перемещение карты при нажатой левой кнопке мыши либо одиночным касанием");
+				}
+		}//checkWidth
+
+		// Execute on load
+		checkWidth();
+		// Bind event listener
+		$(window).resize(checkWidth);
 }
